@@ -16,12 +16,22 @@
 		95239B061A9701A0008AB0C8 /* tableViewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95239B051A9701A0008AB0C8 /* tableViewView.swift */; };
 		95239B081A990B54008AB0C8 /* time.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95239B071A990B54008AB0C8 /* time.swift */; };
 		95239B0A1A997328008AB0C8 /* alertViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95239B091A997328008AB0C8 /* alertViewController.swift */; };
+		95239B431A99C011008AB0C8 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95239B3E1A99C011008AB0C8 /* Bolts.framework */; };
+		95239B441A99C011008AB0C8 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95239B3E1A99C011008AB0C8 /* Bolts.framework */; };
+		95239B451A99C011008AB0C8 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95239B3F1A99C011008AB0C8 /* Parse.framework */; };
+		95239B461A99C011008AB0C8 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95239B3F1A99C011008AB0C8 /* Parse.framework */; };
+		95239B471A99C011008AB0C8 /* ParseCrashReporting.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95239B401A99C011008AB0C8 /* ParseCrashReporting.framework */; };
+		95239B481A99C011008AB0C8 /* ParseCrashReporting.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95239B401A99C011008AB0C8 /* ParseCrashReporting.framework */; };
+		95239B491A99C011008AB0C8 /* ParseFacebookUtils.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95239B411A99C011008AB0C8 /* ParseFacebookUtils.framework */; };
+		95239B4A1A99C011008AB0C8 /* ParseFacebookUtils.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95239B411A99C011008AB0C8 /* ParseFacebookUtils.framework */; };
+		95239B4B1A99C011008AB0C8 /* ParseUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95239B421A99C011008AB0C8 /* ParseUI.framework */; };
+		95239B4C1A99C011008AB0C8 /* ParseUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95239B421A99C011008AB0C8 /* ParseUI.framework */; };
+		95239B4E1A99C86F008AB0C8 /* selectAnswersTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95239B4D1A99C86F008AB0C8 /* selectAnswersTableView.swift */; };
+		95239B4F1A99C86F008AB0C8 /* selectAnswersTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95239B4D1A99C86F008AB0C8 /* selectAnswersTableView.swift */; };
 		9551824D1A956CC8004F47D4 /* PushNotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9551824C1A956CC8004F47D4 /* PushNotificationController.swift */; };
 		95668A3B1A9055AD00A7C16F /* sliderCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95668A3A1A9055AD00A7C16F /* sliderCellView.swift */; };
 		95668A3D1A905F6900A7C16F /* sliderTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95668A3C1A905F6900A7C16F /* sliderTableViewController.swift */; };
 		95668A3F1A91A2D900A7C16F /* sliderViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95668A3E1A91A2D900A7C16F /* sliderViewController2.swift */; };
-		9580B0FC1A8070C90021D96F /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9580B0F71A8070C90021D96F /* Bolts.framework */; };
-		9580B0FD1A8070C90021D96F /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9580B0F81A8070C90021D96F /* Parse.framework */; };
 		9580B1031A8071930021D96F /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9580B1021A8071930021D96F /* SystemConfiguration.framework */; };
 		9580B1051A80719C0021D96F /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9580B1041A80719C0021D96F /* StoreKit.framework */; };
 		9580B1071A8071A40021D96F /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9580B1061A8071A40021D96F /* Security.framework */; };
@@ -59,13 +69,17 @@
 		95239B091A997328008AB0C8 /* alertViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = alertViewController.swift; sourceTree = "<group>"; };
 		95239B3B1A99B7FA008AB0C8 /* wellness.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = wellness.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		95239B3C1A99B7FA008AB0C8 /* wellnessTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = wellnessTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		95239B3E1A99C011008AB0C8 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
+		95239B3F1A99C011008AB0C8 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
+		95239B401A99C011008AB0C8 /* ParseCrashReporting.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ParseCrashReporting.framework; sourceTree = "<group>"; };
+		95239B411A99C011008AB0C8 /* ParseFacebookUtils.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ParseFacebookUtils.framework; sourceTree = "<group>"; };
+		95239B421A99C011008AB0C8 /* ParseUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ParseUI.framework; sourceTree = "<group>"; };
+		95239B4D1A99C86F008AB0C8 /* selectAnswersTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = selectAnswersTableView.swift; sourceTree = "<group>"; };
 		9551824C1A956CC8004F47D4 /* PushNotificationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PushNotificationController.swift; sourceTree = "<group>"; };
 		95668A3A1A9055AD00A7C16F /* sliderCellView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = sliderCellView.swift; sourceTree = "<group>"; };
 		95668A3C1A905F6900A7C16F /* sliderTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = sliderTableViewController.swift; sourceTree = "<group>"; tabWidth = 6; };
 		95668A3E1A91A2D900A7C16F /* sliderViewController2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = sliderViewController2.swift; path = ../sliderViewController2.swift; sourceTree = "<group>"; };
 		9580B0F31A806DE20021D96F /* SimpleTableView-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SimpleTableView-Bridging-Header.h"; sourceTree = SOURCE_ROOT; };
-		9580B0F71A8070C90021D96F /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
-		9580B0F81A8070C90021D96F /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
 		9580B1021A8071930021D96F /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		9580B1041A80719C0021D96F /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		9580B1061A8071A40021D96F /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
@@ -88,16 +102,19 @@
 				9580B1191A80720C0021D96F /* AudioToolbox.framework in Frameworks */,
 				9580B1171A8072050021D96F /* CFNetwork.framework in Frameworks */,
 				9580B1151A8071F80021D96F /* CoreGraphics.framework in Frameworks */,
+				95239B431A99C011008AB0C8 /* Bolts.framework in Frameworks */,
 				9580B1131A8071EF0021D96F /* CoreLocation.framework in Frameworks */,
+				95239B471A99C011008AB0C8 /* ParseCrashReporting.framework in Frameworks */,
+				95239B4B1A99C011008AB0C8 /* ParseUI.framework in Frameworks */,
 				9580B1111A8071E10021D96F /* libz.dylib in Frameworks */,
+				95239B451A99C011008AB0C8 /* Parse.framework in Frameworks */,
+				95239B491A99C011008AB0C8 /* ParseFacebookUtils.framework in Frameworks */,
 				9580B10F1A8071D50021D96F /* libsqlite3.dylib in Frameworks */,
 				9580B10B1A8071B30021D96F /* MobileCoreServices.framework in Frameworks */,
 				9580B1091A8071AC0021D96F /* QuartzCore.framework in Frameworks */,
 				9580B1071A8071A40021D96F /* Security.framework in Frameworks */,
 				9580B1051A80719C0021D96F /* StoreKit.framework in Frameworks */,
 				9580B1031A8071930021D96F /* SystemConfiguration.framework in Frameworks */,
-				9580B0FD1A8070C90021D96F /* Parse.framework in Frameworks */,
-				9580B0FC1A8070C90021D96F /* Bolts.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -105,6 +122,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				95239B461A99C011008AB0C8 /* Parse.framework in Frameworks */,
+				95239B481A99C011008AB0C8 /* ParseCrashReporting.framework in Frameworks */,
+				95239B4C1A99C011008AB0C8 /* ParseUI.framework in Frameworks */,
+				95239B4A1A99C011008AB0C8 /* ParseFacebookUtils.framework in Frameworks */,
+				95239B441A99C011008AB0C8 /* Bolts.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -128,6 +150,7 @@
 				95668A3A1A9055AD00A7C16F /* sliderCellView.swift */,
 				95668A3C1A905F6900A7C16F /* sliderTableViewController.swift */,
 				752376501A4BA14C0039ED45 /* Main.storyboard */,
+				95239B4D1A99C86F008AB0C8 /* selectAnswersTableView.swift */,
 				95239B051A9701A0008AB0C8 /* tableViewView.swift */,
 				7523764C1A4BA14C0039ED45 /* AppDelegate.swift */,
 				95239B091A997328008AB0C8 /* alertViewController.swift */,
@@ -170,14 +193,17 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		9580B0F61A8070C90021D96F /* parse-library-1.6.2 */ = {
+		95239B3D1A99C011008AB0C8 /* parse-library-1.6.2 */ = {
 			isa = PBXGroup;
 			children = (
-				9580B0F71A8070C90021D96F /* Bolts.framework */,
-				9580B0F81A8070C90021D96F /* Parse.framework */,
+				95239B3E1A99C011008AB0C8 /* Bolts.framework */,
+				95239B3F1A99C011008AB0C8 /* Parse.framework */,
+				95239B401A99C011008AB0C8 /* ParseCrashReporting.framework */,
+				95239B411A99C011008AB0C8 /* ParseFacebookUtils.framework */,
+				95239B421A99C011008AB0C8 /* ParseUI.framework */,
 			);
 			name = "parse-library-1.6.2";
-			path = "../healthRS/parse-library-1.6.2";
+			path = "../anycdoteapp/parse-library-1.6.2";
 			sourceTree = "<group>";
 		};
 		9580B1011A8071270021D96F /* Frameworks */ = {
@@ -195,7 +221,7 @@
 				9580B1061A8071A40021D96F /* Security.framework */,
 				9580B1041A80719C0021D96F /* StoreKit.framework */,
 				9580B1021A8071930021D96F /* SystemConfiguration.framework */,
-				9580B0F61A8070C90021D96F /* parse-library-1.6.2 */,
+				95239B3D1A99C011008AB0C8 /* parse-library-1.6.2 */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -315,6 +341,7 @@
 				95668A3B1A9055AD00A7C16F /* sliderCellView.swift in Sources */,
 				9551824D1A956CC8004F47D4 /* PushNotificationController.swift in Sources */,
 				95668A3D1A905F6900A7C16F /* sliderTableViewController.swift in Sources */,
+				95239B4E1A99C86F008AB0C8 /* selectAnswersTableView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -323,6 +350,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				752376631A4BA14C0039ED45 /* wellnessTests.swift in Sources */,
+				95239B4F1A99C86F008AB0C8 /* selectAnswersTableView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -436,6 +464,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"/Users/anna/Dropbox/Well-Being_Anna/healthRS/parse-library-1.6.2",
+					"/Users/anna/Desktop/CURRENT/anycdoteapp/parse-library-1.6.2",
 				);
 				INFOPLIST_FILE = SimpleTableView/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -457,6 +486,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"/Users/anna/Dropbox/Well-Being_Anna/healthRS/parse-library-1.6.2",
+					"/Users/anna/Desktop/CURRENT/anycdoteapp/parse-library-1.6.2",
 				);
 				INFOPLIST_FILE = SimpleTableView/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -474,6 +504,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
+					"/Users/anna/Desktop/CURRENT/anycdoteapp/parse-library-1.6.2",
 				);
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
@@ -493,6 +524,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
+					"/Users/anna/Desktop/CURRENT/anycdoteapp/parse-library-1.6.2",
 				);
 				INFOPLIST_FILE = SimpleTableViewTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";

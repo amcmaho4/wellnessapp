@@ -43,6 +43,7 @@
 		9580B1151A8071F80021D96F /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9580B1141A8071F80021D96F /* CoreGraphics.framework */; };
 		9580B1171A8072050021D96F /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9580B1161A8072050021D96F /* CFNetwork.framework */; };
 		9580B1191A80720C0021D96F /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9580B1181A80720C0021D96F /* AudioToolbox.framework */; };
+		95DB30041AA4248100651F0E /* surveyListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95DB30031AA4248100651F0E /* surveyListTableViewController.swift */; };
 		95F964991A9B33C2007D4CF8 /* sliderTableHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95F964981A9B33C2007D4CF8 /* sliderTableHeaderView.swift */; };
 		95F9649D1A9BD279007D4CF8 /* splitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95F9649C1A9BD279007D4CF8 /* splitViewController.swift */; };
 /* End PBXBuildFile section */
@@ -94,6 +95,7 @@
 		9580B1141A8071F80021D96F /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		9580B1161A8072050021D96F /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
 		9580B1181A80720C0021D96F /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		95DB30031AA4248100651F0E /* surveyListTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = surveyListTableViewController.swift; sourceTree = "<group>"; };
 		95F964981A9B33C2007D4CF8 /* sliderTableHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = sliderTableHeaderView.swift; sourceTree = "<group>"; };
 		95F9649C1A9BD279007D4CF8 /* splitViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = splitViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -149,7 +151,9 @@
 		752376491A4BA14C0039ED45 /* wellness */ = {
 			isa = PBXGroup;
 			children = (
+				95DB30031AA4248100651F0E /* surveyListTableViewController.swift */,
 				95668A3E1A91A2D900A7C16F /* sliderViewController2.swift */,
+				7523764C1A4BA14C0039ED45 /* AppDelegate.swift */,
 				7523764E1A4BA14C0039ED45 /* ViewController.swift */,
 				95668A3A1A9055AD00A7C16F /* sliderCellView.swift */,
 				95668A3C1A905F6900A7C16F /* sliderTableViewController.swift */,
@@ -157,7 +161,6 @@
 				752376501A4BA14C0039ED45 /* Main.storyboard */,
 				95239B4D1A99C86F008AB0C8 /* selectAnswersTableView.swift */,
 				95239B051A9701A0008AB0C8 /* tableViewView.swift */,
-				7523764C1A4BA14C0039ED45 /* AppDelegate.swift */,
 				95F9649C1A9BD279007D4CF8 /* splitViewController.swift */,
 				95239B091A997328008AB0C8 /* alertViewController.swift */,
 				95239B071A990B54008AB0C8 /* time.swift */,
@@ -350,6 +353,7 @@
 				9551824D1A956CC8004F47D4 /* PushNotificationController.swift in Sources */,
 				95668A3D1A905F6900A7C16F /* sliderTableViewController.swift in Sources */,
 				95239B4E1A99C86F008AB0C8 /* selectAnswersTableView.swift in Sources */,
+				95DB30041AA4248100651F0E /* surveyListTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

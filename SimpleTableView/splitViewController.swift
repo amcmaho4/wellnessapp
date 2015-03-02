@@ -10,8 +10,16 @@ import Foundation
 
 class splitViewController :UISplitViewController {
 
+	func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
+		// Override point for customization after application launch.
+		
+		splitViewController?.preferredDisplayMode = UISplitViewControllerDisplayMode.PrimaryOverlay
+	
+		return true
+	}
 
-
+	
+	
 
 
 

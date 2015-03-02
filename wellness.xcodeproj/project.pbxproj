@@ -12,6 +12,7 @@
 		752376521A4BA14C0039ED45 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 752376501A4BA14C0039ED45 /* Main.storyboard */; };
 		752376541A4BA14C0039ED45 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 752376531A4BA14C0039ED45 /* Images.xcassets */; };
 		752376631A4BA14C0039ED45 /* wellnessTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 752376621A4BA14C0039ED45 /* wellnessTests.swift */; };
+		95016CB11AA51DB000EDF98A /* signinViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95016CB01AA51DB000EDF98A /* signinViewController.swift */; };
 		9501B7DF1A89EBB20060F5B4 /* results.csv in Resources */ = {isa = PBXBuildFile; fileRef = 9501B7DE1A89EBB20060F5B4 /* results.csv */; };
 		95239B061A9701A0008AB0C8 /* tableViewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95239B051A9701A0008AB0C8 /* tableViewView.swift */; };
 		95239B081A990B54008AB0C8 /* time.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95239B071A990B54008AB0C8 /* time.swift */; };
@@ -43,6 +44,13 @@
 		9580B1151A8071F80021D96F /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9580B1141A8071F80021D96F /* CoreGraphics.framework */; };
 		9580B1171A8072050021D96F /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9580B1161A8072050021D96F /* CFNetwork.framework */; };
 		9580B1191A80720C0021D96F /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9580B1181A80720C0021D96F /* AudioToolbox.framework */; };
+		95D1F2A91AA4301100472B4F /* currentSurveyCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95D1F2A81AA4301100472B4F /* currentSurveyCellView.swift */; };
+		95D1F2AB1AA4535100472B4F /* home2surveyCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95D1F2AA1AA4535100472B4F /* home2surveyCellView.swift */; };
+		95F586121AA4F165002B7574 /* homeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95F586111AA4F165002B7574 /* homeTableViewController.swift */; };
+		95F586141AA4F1E0002B7574 /* homeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95F586131AA4F1E0002B7574 /* homeTableViewCell.swift */; };
+		95F586171AA4F8AE002B7574 /* loginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95F586161AA4F8AE002B7574 /* loginViewController.swift */; };
+		95F5861B1AA4FC31002B7574 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95F5861A1AA4FC31002B7574 /* User.swift */; };
+		95F5861D1AA508A2002B7574 /* Survey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95F5861C1AA508A2002B7574 /* Survey.swift */; };
 		95F964991A9B33C2007D4CF8 /* sliderTableHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95F964981A9B33C2007D4CF8 /* sliderTableHeaderView.swift */; };
 		95F9649D1A9BD279007D4CF8 /* splitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95F9649C1A9BD279007D4CF8 /* splitViewController.swift */; };
 /* End PBXBuildFile section */
@@ -65,6 +73,7 @@
 		752376531A4BA14C0039ED45 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		752376611A4BA14C0039ED45 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		752376621A4BA14C0039ED45 /* wellnessTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = wellnessTests.swift; sourceTree = "<group>"; };
+		95016CB01AA51DB000EDF98A /* signinViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = signinViewController.swift; sourceTree = "<group>"; };
 		9501B7DE1A89EBB20060F5B4 /* results.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = results.csv; sourceTree = "<group>"; };
 		95239B051A9701A0008AB0C8 /* tableViewView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = tableViewView.swift; sourceTree = "<group>"; };
 		95239B071A990B54008AB0C8 /* time.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = time.swift; sourceTree = "<group>"; };
@@ -94,6 +103,13 @@
 		9580B1141A8071F80021D96F /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		9580B1161A8072050021D96F /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
 		9580B1181A80720C0021D96F /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		95D1F2A81AA4301100472B4F /* currentSurveyCellView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = currentSurveyCellView.swift; path = ../currentSurveyCellView.swift; sourceTree = "<group>"; };
+		95D1F2AA1AA4535100472B4F /* home2surveyCellView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = home2surveyCellView.swift; sourceTree = "<group>"; };
+		95F586111AA4F165002B7574 /* homeTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = homeTableViewController.swift; sourceTree = "<group>"; };
+		95F586131AA4F1E0002B7574 /* homeTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = homeTableViewCell.swift; sourceTree = "<group>"; };
+		95F586161AA4F8AE002B7574 /* loginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = loginViewController.swift; sourceTree = "<group>"; };
+		95F5861A1AA4FC31002B7574 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		95F5861C1AA508A2002B7574 /* Survey.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Survey.swift; sourceTree = "<group>"; };
 		95F964981A9B33C2007D4CF8 /* sliderTableHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = sliderTableHeaderView.swift; sourceTree = "<group>"; };
 		95F9649C1A9BD279007D4CF8 /* splitViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = splitViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -149,20 +165,15 @@
 		752376491A4BA14C0039ED45 /* wellness */ = {
 			isa = PBXGroup;
 			children = (
-				95668A3E1A91A2D900A7C16F /* sliderViewController2.swift */,
-				7523764E1A4BA14C0039ED45 /* ViewController.swift */,
-				95668A3A1A9055AD00A7C16F /* sliderCellView.swift */,
-				95668A3C1A905F6900A7C16F /* sliderTableViewController.swift */,
-				95F964981A9B33C2007D4CF8 /* sliderTableHeaderView.swift */,
 				752376501A4BA14C0039ED45 /* Main.storyboard */,
-				95239B4D1A99C86F008AB0C8 /* selectAnswersTableView.swift */,
-				95239B051A9701A0008AB0C8 /* tableViewView.swift */,
 				7523764C1A4BA14C0039ED45 /* AppDelegate.swift */,
-				95F9649C1A9BD279007D4CF8 /* splitViewController.swift */,
-				95239B091A997328008AB0C8 /* alertViewController.swift */,
-				95239B071A990B54008AB0C8 /* time.swift */,
-				9551824C1A956CC8004F47D4 /* PushNotificationController.swift */,
+				95F586151AA4F82E002B7574 /* login view */,
+				95D1F2A31AA42E3D00472B4F /* home view  */,
+				95D1F2A21AA42E0800472B4F /* slider view controller */,
+				95D1F2A41AA42EA100472B4F /* other views */,
 				7523764A1A4BA14C0039ED45 /* Supporting Files */,
+				95F5861A1AA4FC31002B7574 /* User.swift */,
+				95F5861C1AA508A2002B7574 /* Survey.swift */,
 			);
 			name = wellness;
 			path = SimpleTableView;
@@ -230,6 +241,51 @@
 				95239B3D1A99C011008AB0C8 /* parse-library-1.6.2 */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		95D1F2A21AA42E0800472B4F /* slider view controller */ = {
+			isa = PBXGroup;
+			children = (
+				95D1F2A81AA4301100472B4F /* currentSurveyCellView.swift */,
+				95D1F2AA1AA4535100472B4F /* home2surveyCellView.swift */,
+				95668A3E1A91A2D900A7C16F /* sliderViewController2.swift */,
+				95668A3A1A9055AD00A7C16F /* sliderCellView.swift */,
+				95668A3C1A905F6900A7C16F /* sliderTableViewController.swift */,
+				95F964981A9B33C2007D4CF8 /* sliderTableHeaderView.swift */,
+			);
+			name = "slider view controller";
+			sourceTree = "<group>";
+		};
+		95D1F2A31AA42E3D00472B4F /* home view  */ = {
+			isa = PBXGroup;
+			children = (
+				95F586111AA4F165002B7574 /* homeTableViewController.swift */,
+				95F586131AA4F1E0002B7574 /* homeTableViewCell.swift */,
+			);
+			name = "home view ";
+			sourceTree = "<group>";
+		};
+		95D1F2A41AA42EA100472B4F /* other views */ = {
+			isa = PBXGroup;
+			children = (
+				7523764E1A4BA14C0039ED45 /* ViewController.swift */,
+				95239B4D1A99C86F008AB0C8 /* selectAnswersTableView.swift */,
+				95239B051A9701A0008AB0C8 /* tableViewView.swift */,
+				95F9649C1A9BD279007D4CF8 /* splitViewController.swift */,
+				95239B091A997328008AB0C8 /* alertViewController.swift */,
+				95239B071A990B54008AB0C8 /* time.swift */,
+				9551824C1A956CC8004F47D4 /* PushNotificationController.swift */,
+			);
+			name = "other views";
+			sourceTree = "<group>";
+		};
+		95F586151AA4F82E002B7574 /* login view */ = {
+			isa = PBXGroup;
+			children = (
+				95F586161AA4F8AE002B7574 /* loginViewController.swift */,
+				95016CB01AA51DB000EDF98A /* signinViewController.swift */,
+			);
+			name = "login view";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -341,14 +397,22 @@
 				7523764F1A4BA14C0039ED45 /* ViewController.swift in Sources */,
 				95239B061A9701A0008AB0C8 /* tableViewView.swift in Sources */,
 				95668A3F1A91A2D900A7C16F /* sliderViewController2.swift in Sources */,
+				95F586171AA4F8AE002B7574 /* loginViewController.swift in Sources */,
 				95239B0A1A997328008AB0C8 /* alertViewController.swift in Sources */,
 				95F964991A9B33C2007D4CF8 /* sliderTableHeaderView.swift in Sources */,
+				95F586121AA4F165002B7574 /* homeTableViewController.swift in Sources */,
+				95F5861D1AA508A2002B7574 /* Survey.swift in Sources */,
 				7523764D1A4BA14C0039ED45 /* AppDelegate.swift in Sources */,
+				95D1F2A91AA4301100472B4F /* currentSurveyCellView.swift in Sources */,
+				95D1F2AB1AA4535100472B4F /* home2surveyCellView.swift in Sources */,
 				95239B081A990B54008AB0C8 /* time.swift in Sources */,
 				95F9649D1A9BD279007D4CF8 /* splitViewController.swift in Sources */,
 				95668A3B1A9055AD00A7C16F /* sliderCellView.swift in Sources */,
 				9551824D1A956CC8004F47D4 /* PushNotificationController.swift in Sources */,
+				95F5861B1AA4FC31002B7574 /* User.swift in Sources */,
+				95016CB11AA51DB000EDF98A /* signinViewController.swift in Sources */,
 				95668A3D1A905F6900A7C16F /* sliderTableViewController.swift in Sources */,
+				95F586141AA4F1E0002B7574 /* homeTableViewCell.swift in Sources */,
 				95239B4E1A99C86F008AB0C8 /* selectAnswersTableView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

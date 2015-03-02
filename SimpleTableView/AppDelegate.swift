@@ -39,14 +39,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 		registerForParse()
 		
-//		let types:UIUserNotificationType = UIUserNotificationType.Alert | UIUserNotificationType.Badge
-//		
-//		let mySettings:UIUserNotificationSettings = UIUserNotificationSettings(forTypes: types, categories: nil)
-//		
-//		application.registerUserNotificationSettings(mySettings)
-		
-		
-		
 	
 	
 		// PUSH NOTIFICTION STUFF
@@ -211,6 +203,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 		// set up moodData var, mood in parse
 		var moodData = PFObject(className:"mood")
 		// unique user Identifier
+		
 		moodData["User"] = UIDevice.currentDevice().identifierForVendor.UUIDString
 		// start up the CS
 		var textMoodData = PFObject(className:"textmood")
@@ -222,7 +215,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 		file.saveInBackgroundWithBlock({ (success: Bool!, error: NSError!) -> Void in
 			// saved now
 		})
+	 User.registerSubclass();
 		
+		//Survey.registerSubclass();
+
 		
 	}
 	

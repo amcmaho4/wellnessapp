@@ -8,7 +8,14 @@ import AVFoundation
 class sliderTableViewController:  UIViewController, UITableViewDelegate, UITableViewDataSource{
 	
 		@IBOutlet var tableView: UITableView?
-//	var questions: NSArray = NSArray()
+	
+	//var tableFooterView: sliderTableViewFooter?
+	var tableHeaderView: sliderTableHeaderView?
+
+	
+	//@IBOutlet var tableFooterView: UIView!
+	
+	//	var questions: NSArray = NSArray()
 	var questions = ["Angry or Irritated","Stressed or Overwhelmed", "anxious", "happy"]
 	
 		let applicationDelegate: AppDelegate = UIApplication.sharedApplication().delegate as AppDelegate
@@ -41,7 +48,7 @@ class sliderTableViewController:  UIViewController, UITableViewDelegate, UITable
 	
 	// Asks the data source to return the number of rows in a section, the number of which is given
 	func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-		return 2
+		return 5
 	}
 	
 	
@@ -61,10 +68,27 @@ class sliderTableViewController:  UIViewController, UITableViewDelegate, UITable
 			return sliderCellView();
 		}
 		
-
-		
 	}
-
+//
+//	func tableView(tableView: UITableView, viewForFooterInSection section: Int) -> UIView? {
+//		
+//		
+////		let footerView = UIView(frame: CGRectMake(0, 0, tableView.frame.size.width, 100))
+////		footerView.backgroundColor = UIColor.cyanColor()
+////		
+////		let submitButton :UIButton = UIButton()
+////		
+//		
+//		//return tableFooterView?
+//	}
+	
+	
+	@IBOutlet var button: UIButton!
+	
+    func tableView(tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {
+		return 40.0
+	}
+	
 	
 	//MARK: - Table View Delegate Method
 //	// Asks the table view delegate to return the height of a given row.

@@ -63,6 +63,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
 //	}
 
 	
+	
 	@IBAction func nextAction(sender: UIButton) {
 		questionBox.text = questions[++currentQuestion]
 		lastButton.enabled=true
@@ -151,10 +152,17 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
 	@IBAction func finishAction(sender: UIButton) {
 		
 		var moodData = PFObject(className:"mood")
+		var surveyData = PFObject(className:"surveyData")
 		
+		surveyData["userHasTakenSurvey"] = true
+				
 		for a in 0...3{
-		moodData["Q\(a)"] = [ans[a], timeStamps[a]]
+			moodData["Q\(a)"] = [ans[a], timeStamps[a]]
 		}
+		
+		surveyData.saveInBackgroundWithBlock({ (success: Bool!, error: NSError!) -> Void in
+			// saved now
+		})
 		
 		moodData.saveInBackgroundWithBlock({ (success: Bool!, error: NSError!) -> Void in
 			// saved now
@@ -181,3 +189,5 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
 
 
 }
+
+

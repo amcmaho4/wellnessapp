@@ -18,18 +18,32 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 	var dict_info: NSMutableDictionary = NSMutableDictionary()
 	
+	enum Actions:String{
+		case increment = "INCREMENT_ACTION"
+		case decrement = "DECREMENT_ACTION"
+		case reset = "RESET_ACTION"
+	}
+	
+	var categoryID:String {
+		get{
+			return "COUNTER_CATEGORY"
+		}
+	}
+	
+	
 
 	func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
 		
 		
-		
+		registerNotification()
+
 		registerForParse()
 		
-		let types:UIUserNotificationType = UIUserNotificationType.Alert | UIUserNotificationType.Badge
-		
-		let mySettings:UIUserNotificationSettings = UIUserNotificationSettings(forTypes: types, categories: nil)
-		
-		application.registerUserNotificationSettings(mySettings)
+//		let types:UIUserNotificationType = UIUserNotificationType.Alert | UIUserNotificationType.Badge
+//		
+//		let mySettings:UIUserNotificationSettings = UIUserNotificationSettings(forTypes: types, categories: nil)
+//		
+//		application.registerUserNotificationSettings(mySettings)
 		
 		
 		
@@ -43,6 +57,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 			let types:UIUserNotificationType = (.Alert | .Badge | .Sound)
 			let settings:UIUserNotificationSettings = UIUserNotificationSettings(forTypes: types, categories: nil)
 			application.registerUserNotificationSettings(settings)
+			
+			
 			application.registerForRemoteNotifications()
 			
 		} else {
@@ -91,19 +107,23 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 			var query = PFQuery(className:"surveyTime")
 			query.getObjectInBackgroundWithId("sY96fDXJ60") {
 				(surveyTime: PFObject!, error: NSError!) -> Void in
+				
 				if error == nil {
 					let updatedAt = surveyTime.updatedAt
 
-					// check if the time has been changed
 	
 					if NSDate().timeIntervalSinceDate(updatedAt) < 60*60*24 {
-					var timeForSurvey = NSDate(timeIntervalSinceNow: 4);//)//surveyTime["surveyTime"] as NSDate
-					
-					let notifications = [UILocalNotification(), UILocalNotification(), UILocalNotification()]
-						var minutesBetweenSurveyNotifications: Int = 1;
+					//var timeForSurvey = NSDate(timeIntervalSinceNow: 4);//)//surveyTime["surveyTime"] as NSDate
+					var timeForSurvey = NSDate(timeIntervalSinceNow: 3)
+						//surveyTime["surveyTime"] as NSDate
+						let notifications = [UILocalNotification(), UILocalNotification(), UILocalNotification()]
+						
+
+						var minutesBetweenSurveyNotifications: Int = 30;
 						var minutesUntilNextSurveyNotification: Int = 0;
 					for n in notifications{
-
+						
+						//n.category = categoryID
 						n.fireDate = timeForSurvey.xHoursMinutes(0, y: minutesUntilNextSurveyNotification)
 						n.timeZone = NSCalendar.currentCalendar().timeZone
 						
@@ -116,7 +136,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 						minutesUntilNextSurveyNotification += minutesBetweenSurveyNotifications
 						application.scheduleLocalNotification(n)
 					}
-
+					
 						
 					}
 
@@ -129,8 +149,62 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 	}
 	
 	
-func registerForParse(){
+	func registerNotification() {
+		
+		// 1. Create the actions **************************************************
+		
+		// increment Action
+		let incrementAction = UIMutableUserNotificationAction()
+		incrementAction.identifier = Actions.increment.rawValue
+		incrementAction.title = "ADD +1!"
+		incrementAction.activationMode = UIUserNotificationActivationMode.Background
+		incrementAction.authenticationRequired = true
+		incrementAction.destructive = false
+		
+		// decrement Action
+		let decrementAction = UIMutableUserNotificationAction()
+		decrementAction.identifier = Actions.decrement.rawValue
+		decrementAction.title = "SUB -1"
+		decrementAction.activationMode = UIUserNotificationActivationMode.Background
+		decrementAction.authenticationRequired = true
+		decrementAction.destructive = false
+		
+		// reset Action
+		let resetAction = UIMutableUserNotificationAction()
+		resetAction.identifier = Actions.reset.rawValue
+		resetAction.title = "RESET"
+		resetAction.activationMode = UIUserNotificationActivationMode.Foreground
+		// NOT USED resetAction.authenticationRequired = true
+		resetAction.destructive = true
+		
+		
+		// 2. Create the category ***********************************************
+		
+		// Category
+		let counterCategory = UIMutableUserNotificationCategory()
+		counterCategory.identifier = categoryID
+		
+		// A. Set actions for the default context
+		counterCategory.setActions([incrementAction, decrementAction, resetAction],
+			forContext: UIUserNotificationActionContext.Default)
+		
+		// B. Set actions for the minimal context
+		counterCategory.setActions([incrementAction, decrementAction],
+			forContext: UIUserNotificationActionContext.Minimal)
+		
+		
+		// 3. Notification Registration *****************************************
+//		
+		let types = UIUserNotificationType.Alert | UIUserNotificationType.Sound
+		let settings = UIUserNotificationSettings(forTypes: types, categories: NSSet(object: counterCategory))
+		UIApplication.sharedApplication().registerUserNotificationSettings(settings)
+	}
+
 	
+	
+	
+	func registerForParse(){
+		
 		// Override point for customization after application launch.
 		Parse.setApplicationId("sU7ao7fKPWuy0B1jS7C2oekdD3ke1EXXmfeJELkW", clientKey: "18zl5F4VPSd6uHgdza0CYZproJssbneWcMC2pMOD")
 		
@@ -148,14 +222,18 @@ func registerForParse(){
 		file.saveInBackgroundWithBlock({ (success: Bool!, error: NSError!) -> Void in
 			// saved now
 		})
-	
-	
+		
+		
 	}
+	
+	func cancelAllLocalNotifications(){
+		
+	}
+	
+
 
 	
 	
 	
-	
-	
-	
 }
+

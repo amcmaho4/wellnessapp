@@ -7,3 +7,11 @@
 //
 
 import Foundation
+
+class sliderTableHeaderView : UIView {
+
+
+
+
+
+}

@@ -13,6 +13,8 @@
 		752376541A4BA14C0039ED45 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 752376531A4BA14C0039ED45 /* Images.xcassets */; };
 		752376631A4BA14C0039ED45 /* wellnessTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 752376621A4BA14C0039ED45 /* wellnessTests.swift */; };
 		95016CB11AA51DB000EDF98A /* signinViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95016CB01AA51DB000EDF98A /* signinViewController.swift */; };
+		95016CB41AAC17C700EDF98A /* 57questionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95016CB31AAC17C700EDF98A /* 57questionsViewController.swift */; };
+		95016CB71AADE6F000EDF98A /* shortAnswerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95016CB61AADE6F000EDF98A /* shortAnswerViewController.swift */; };
 		9501B7DF1A89EBB20060F5B4 /* results.csv in Resources */ = {isa = PBXBuildFile; fileRef = 9501B7DE1A89EBB20060F5B4 /* results.csv */; };
 		95239B061A9701A0008AB0C8 /* tableViewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95239B051A9701A0008AB0C8 /* tableViewView.swift */; };
 		95239B081A990B54008AB0C8 /* time.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95239B071A990B54008AB0C8 /* time.swift */; };
@@ -74,6 +76,8 @@
 		752376611A4BA14C0039ED45 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		752376621A4BA14C0039ED45 /* wellnessTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = wellnessTests.swift; sourceTree = "<group>"; };
 		95016CB01AA51DB000EDF98A /* signinViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = signinViewController.swift; sourceTree = "<group>"; };
+		95016CB31AAC17C700EDF98A /* 57questionsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = 57questionsViewController.swift; sourceTree = "<group>"; };
+		95016CB61AADE6F000EDF98A /* shortAnswerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = shortAnswerViewController.swift; sourceTree = "<group>"; };
 		9501B7DE1A89EBB20060F5B4 /* results.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = results.csv; sourceTree = "<group>"; };
 		95239B051A9701A0008AB0C8 /* tableViewView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = tableViewView.swift; sourceTree = "<group>"; };
 		95239B071A990B54008AB0C8 /* time.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = time.swift; sourceTree = "<group>"; };
@@ -156,6 +160,8 @@
 		7523763E1A4BA14C0039ED45 = {
 			isa = PBXGroup;
 			children = (
+				95016CB51AADE58900EDF98A /* short answer questions */,
+				95016CB21AAC177200EDF98A /* table view questions */,
 				752376491A4BA14C0039ED45 /* wellness */,
 				7523765F1A4BA14C0039ED45 /* wellnessTests */,
 				9580B1011A8071270021D96F /* Frameworks */,
@@ -208,6 +214,22 @@
 				752376611A4BA14C0039ED45 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		95016CB21AAC177200EDF98A /* table view questions */ = {
+			isa = PBXGroup;
+			children = (
+				95016CB31AAC17C700EDF98A /* 57questionsViewController.swift */,
+			);
+			name = "table view questions";
+			sourceTree = "<group>";
+		};
+		95016CB51AADE58900EDF98A /* short answer questions */ = {
+			isa = PBXGroup;
+			children = (
+				95016CB61AADE6F000EDF98A /* shortAnswerViewController.swift */,
+			);
+			name = "short answer questions";
 			sourceTree = "<group>";
 		};
 		95239B3D1A99C011008AB0C8 /* parse-library-1.6.2 */ = {
@@ -405,11 +427,13 @@
 				7523764D1A4BA14C0039ED45 /* AppDelegate.swift in Sources */,
 				95D1F2A91AA4301100472B4F /* currentSurveyCellView.swift in Sources */,
 				95D1F2AB1AA4535100472B4F /* home2surveyCellView.swift in Sources */,
+				95016CB71AADE6F000EDF98A /* shortAnswerViewController.swift in Sources */,
 				95239B081A990B54008AB0C8 /* time.swift in Sources */,
 				95F9649D1A9BD279007D4CF8 /* splitViewController.swift in Sources */,
 				95668A3B1A9055AD00A7C16F /* sliderCellView.swift in Sources */,
 				9551824D1A956CC8004F47D4 /* PushNotificationController.swift in Sources */,
 				95F5861B1AA4FC31002B7574 /* User.swift in Sources */,
+				95016CB41AAC17C700EDF98A /* 57questionsViewController.swift in Sources */,
 				95016CB11AA51DB000EDF98A /* signinViewController.swift in Sources */,
 				95668A3D1A905F6900A7C16F /* sliderTableViewController.swift in Sources */,
 				95F586141AA4F1E0002B7574 /* homeTableViewCell.swift in Sources */,

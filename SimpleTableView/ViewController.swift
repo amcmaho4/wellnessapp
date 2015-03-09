@@ -27,7 +27,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
 			return (NSDate().timeIntervalSince1970 * 1000)
 		}
 	}
-	var items: [String] = ["1 - Not at all", "2 - Very Little", "3 - Somewhat", "4 - quite a bit", "5 - Not at all"]
+	var items: [String] = ["1 - Not at all", "2 - Very Little", "3 - Somewhat", "4 - quite a bit", "5 - Not at all", "Yes", "No"]
 	
 	//var items: [String] = ["😎", "😬", "😑", "😠", "😡"]
 	
@@ -42,7 +42,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         self.tableView.registerClass(UITableViewCell.self, forCellReuseIdentifier: "cell")
 		
 		NSNotificationCenter.defaultCenter().addObserver(self, selector: "updateUI:", name: "COUNTER_UPDATED", object: nil)
-
+		
 		
     }
 	
@@ -113,11 +113,14 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
 		if(ans[currentQuestion] >= 0){
 			var index = NSIndexPath(forRow: ans[currentQuestion], inSection: 0)
 			var selectedIndex = self.tableView.indexPathForSelectedRow()
+			
+			
 			if(selectedIndex != nil){
 				
 			tableView.deselectRowAtIndexPath(selectedIndex!, animated: false)
 			}
 			tableView.selectRowAtIndexPath(index, animated: false, scrollPosition: UITableViewScrollPosition.None)
+			
 		}
 		else {
 			let selectedIndex = self.tableView.indexPathForSelectedRow()
@@ -129,10 +132,14 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return self.items.count;
     }
+	
+//	func tableView(tableView: UITableView, setT )
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         var cell:UITableViewCell = self.tableView.dequeueReusableCellWithIdentifier("cell") as UITableViewCell
-        
+		if indexPath == 0{
+		
+		}
         cell.textLabel?.text = self.items[indexPath.row]
         
         return cell
@@ -145,8 +152,18 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
 		
 		ans[n] = indexPath.row
 		timeStamps[n] = Timestamp;
-		    }
+		
+	}
 	
+	func setHeightOfTableView()
+	{
+	
+	/**** set frame size of tableview according to number of cells ****/
+//	var height=60.0*self.items.count;
+	//tableView.setFrame
+	
+		
+	}
 	
 	
 	@IBAction func finishAction(sender: UIButton) {

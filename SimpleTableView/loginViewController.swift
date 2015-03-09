@@ -20,18 +20,29 @@ class loginViewController: UIViewController {
 	@IBOutlet var loginButton: UIButton!
 	
 	@IBOutlet var createAccountButton: UIButton!
+	@IBOutlet var backView: UIView!
+
 	
-	
-	
+	//text field should return
 	
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
 		
-		
+		//Looks for single or multiple taps.
+		var tap:UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: "DismissKeyboard")
+		backView.addGestureRecognizer(tap)
 		
     }
+	
+	
+
+	
+	//Calls this function when the tap is recognized.
+	func DismissKeyboard(){
+		//Causes the view (or one of its embedded text fields) to resign the first responder status.
+		backView.endEditing(true)
+	}
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -61,8 +72,6 @@ class loginViewController: UIViewController {
 				
 				self.showAlert()
 				
-				
-				
 			}
 		}
 	}
@@ -83,8 +92,6 @@ class loginViewController: UIViewController {
 		createAccountErrorAlert.message = "That is not an account"
 		createAccountErrorAlert.addButtonWithTitle("Create Account")
 		createAccountErrorAlert.addButtonWithTitle("Dismiss")
-		
-		
 		createAccountErrorAlert.show()
 	}
 	

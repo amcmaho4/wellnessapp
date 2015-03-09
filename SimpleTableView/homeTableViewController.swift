@@ -100,7 +100,7 @@ class homeTableViewController: UITableViewController {
 	
 	override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
 		if(indexPath.row == 0 && indexPath.section == 0){
-		self.performSegueWithIdentifier("surveySelected", sender: self)
+			self.performSegueWithIdentifier("surveySelected", sender: self)
 		}
 		else{
 				}
